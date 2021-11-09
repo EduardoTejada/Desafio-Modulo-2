@@ -1,0 +1,117 @@
+main article {
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+    width: 85%;
+}
+
+.description-container h1 {
+    margin: 0.5rem;
+    font-size: 1.8rem;
+    text-shadow: 1px 1px 2px black;
+}
+
+.description-container p {
+    margin: 0.5rem;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.description-container p a {
+    color: black;
+    text-decoration: underline;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.calculator-container {
+    background-color: hsl(0, 60%, 45%);
+    width: 85%;
+    min-width: 26.25rem;
+    padding: 0.5rem 2rem 1rem 2rem;
+    border-radius: 10px;
+    box-shadow: 20px 30px 25px rgba(0, 0, 0, 0.15);
+    color: white;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 30px auto 0 auto;
+    box-shadow: 2px 6px 23px 5px rgba(0,0,0,0.5);
+}
+
+.calculator-container h1 {
+    margin: 0.5rem 0;
+    font-size: 1.8rem;
+}
+
+.calculator-container h1 span {
+    text-decoration: underline;
+}
+
+.calculator-container input {
+    width: 100%;
+    font-weight: 400;
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1.2px solid whitesmoke;
+    background-color: hsl(0, 60%, 45%);
+    color: white;
+}
+
+.calculator-container input:focus {
+    outline-color: whitesmoke;
+    outline-style: dashed;
+}
+
+.calculator-container p {
+    margin: 0.5rem 0;
+}
+
+.calculator-container label {
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.calculator-container input, .calculator-container label {
+    padding: 1rem;
+}
+
+@media (min-width: 1000px){
+    .calculator-container, main article {
+        width: 70%;
+    }
+}
+
+.calculate-button {
+    border: none;
+    padding: 10px 20px;
+    margin: 1.5rem 0;
+    color: white;
+    border: 1px whitesmoke solid;
+    border-radius: 5px;
+    background: hsl(0, 60%, 45%);
+    transition: background 0.5s;
+}
+
+.calculate-button:hover {
+    background: hsl(0, 60%, 60%);
+    cursor: pointer;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+  
+:-ms-input-placeholder {
+    color: white;
+}
+ 
+::-ms-input-placeholder {
+    color: white;
+}
+

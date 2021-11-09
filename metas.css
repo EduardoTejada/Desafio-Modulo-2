@@ -1,0 +1,50 @@
+body {
+    overflow-x: hidden;
+}
+
+.calculator-container label {
+    text-decoration: underline;
+}
+
+.grid-container {
+    margin: 2rem;
+    width: 85%;
+    display: grid;
+    align-content: center;
+    justify-content: stretch;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.grid-container * {
+    padding: 10px;
+    margin: 0;
+}
+
+.grid-container * * {
+    margin: 0;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.grid-container * h2 {
+    background-color: bisque;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom: 0;
+    text-transform: capitalize;
+}
+
+.grid-container * p {
+    background-color: hsl(0, 60%, 45%);
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.grid-container * div {
+    border-top: 0;
+    background-color: bisque;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
+}

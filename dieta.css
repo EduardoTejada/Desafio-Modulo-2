@@ -1,0 +1,66 @@
+.food-list {
+    list-style: none;
+    display: grid;
+    margin: 2rem;
+    width: 85%;
+    display: grid;
+    align-content: center;
+    justify-content: stretch;
+    row-gap: 1rem;
+    column-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    color: white;
+}
+
+.food-list li {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-transform: capitalize;
+    align-content: center;
+    background-color: hsl(0, 65%, 45%);
+    border-radius: 10px;
+}
+
+.food-list li input:after {
+    background-color: green;
+    color: green;
+}
+
+#container-dieta {
+    display: none;
+}
+
+.results-container {
+    background: linear-gradient(#e04f4f, hsl(0, 65%, 45%));
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 20px;
+}
+
+.results-container button {
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    transition: background-color 0.5s;
+}
+
+.results-container button:hover {
+    background-color: rgb(255, 214, 214);
+    cursor: pointer;
+}
+
+.results-container div {
+    color: white;
+}
+
+#resultado-dieta {
+    text-decoration: underline;
+}

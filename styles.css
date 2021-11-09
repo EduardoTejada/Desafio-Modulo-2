@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap');
+
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(
+        135deg,
+        hsl(0, 0%, 100%),
+        hsl(0, 29%, 73%)
+    );
+    background-attachment: fixed;
+}
+
+.main_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsl(0, 60%, 45%);
+}
+
+.main_header * {
+    color: white;
+}
+
+.brand_title {
+    font-size: 1.6rem;
+    margin: 0.5rem;
+    font-weight: bold;
+}
+
+.brand_title a {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.brand_title a img {
+    height: 3.2em;
+    width: auto;
+    padding-right: 10px;
+}
+
+.navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-right: 0.5em;
+}
+
+.navigation li {
+    list-style: none;
+}
+
+.navigation li a {
+    padding: 1rem;
+    margin: 0.2em;
+    display: block;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.navigation li a:hover{
+    background-color: hsl(0, 75%, 35%);
+    transform: scale(1.1);
+}
+
+.toogle-button {
+    position: absolute;
+    top: 0.75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+}
+
+.toogle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+}
+
+@media (max-width: 800px){
+    .toogle-button {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        width: 100%;
+    }
+
+    .main_header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navigation {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .navigation li {
+        text-align: center;
+    }
+
+    .navigation li a {
+        padding: 0.5rem 1rem;
+    }
+
+    .navigation li a:hover {
+        transform: scale(1);
+    }
+
+    .navbar.active {
+        display: flex;
+    }
+}
+
+footer {
+    width: 100%;
+    background: black;
+    padding: 1rem;
+    position: relative;
+    margin-top: 10px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-top: 2.4rem;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+}
+
+footer p a, footer p {
+    color: white;
+}
+
+footer p a {
+    text-decoration: underline;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultoria de bem-estar físico - Eduardo Consultorias</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="stylesheet" href="metas.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="main_header">
+        <div class="brand_title">
+            <a href="index.html">
+                <img src="logo.png" alt="Logo da consultoria">
+                Eduardo Consultorias
+            </a>
+        </div>
+        <a href="#" class="toogle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calcular_imc.html">Calcular IMC</a></li>
+                <li><a href="metas.html">Suas metas</a></li>
+                <li><a href="dieta_calorica.html">Dieta Calórica</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <article class="calculator-container">
+            <h1>Suas metas</h1>
+            <p>Aqui é o lugar onde você pode cadastrar novas metas pessoais com a consultoria!</p>
+            <p>Você adicionou <span id="couting-goals">0</span> metas!</p>
+            <label for="title">Título da Meta</label>
+            <input type="text" name="title" id="title" placeholder="Insira o título">
+            <label for="content">Adicione uma descrição para a meta</label>
+            <input type="text" name="content" id="content" placeholder="Insira o conteúdo">
+            <button class="calculate-button" onclick="addGoal()">Inserir Meta</button>
+        </article>
+
+        <div class="grid-container">
+        </div>
+    </main>
+</body>
+</html>
