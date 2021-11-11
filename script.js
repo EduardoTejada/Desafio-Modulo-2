@@ -12,11 +12,23 @@ function calcularImc() {
     let peso = parseInt(document.querySelector('#weight').value);
     const resultado = document.querySelector('#resultado-imc');
     let imc = parseInt(peso/(altura*altura));
-    if(imc >= 30){
-        resultado.innerHTML = "Você está acima do peso!";
+    if(imc < 18.5){
+        resultado.innerHTML = "Abaixo do Peso!";
     }
-    else {
-        resultado.innerHTML = "Você está com o peso ideal!"
+    else if (imc >= 18.5 && imc < 25){
+        resultado.innerHTML = "Peso Normal!"
+    }
+    else if (imc >= 25 && imc < 30){
+        resultado.innerHTML = "Sobrepeso!"
+    }
+    else if (imc >= 30 && imc < 35){
+        resultado.innerHTML = "Obesidade Grau I!"
+    }
+    else if (imc >= 35 && imc < 40){
+        resultado.innerHTML = "Obesidade Grau II!"
+    }
+    else{
+        resultado.innerHTML = "Obesidade Mórbida!"
     }
 }
 
